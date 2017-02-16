@@ -1,3 +1,76 @@
 <resources>
-    <string name="app_name">BLE Debug</string>
+    <string name="app_name">BLE调试专家</string>
+
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    <string name="menu_exit">Exit</string>
+    <string name="exitDlg_Content">Are you sure want to exit?</string>
+    <string name="exitTip_Content">Please click BACK again to exit.</string>
+    <string name="label_default">- -</string>
+    <string name="menu_about">About</string>
+    <string name="label_companyName">JusteC ShenZhen CO.,Ltd</string>
+    <string name="label_companyAddr">http://www.justec.cn/</string>
+    <string name="menu_getRealtimeData">Get realtime data</string>
+    <string name="menu_stopTransmission">Stop transmission</string>
+    <string name="label_temp">Temp.</string>
+    <string name="label_notouch">No touch</string>
+    <string name="label_goodContact">Good contact</string>
+    <string name="label_looseContact">Loose contact</string>
+    <string name="label_nomagnet">No magnet</string>
+    <string name="label_havemagnet">Have magnet</string>
+    <string name="menu_cali">Calibration</string>
+    <string name="title_Cali">Thermistor parameter calibration</string>
+    <string name="button_Cali">Calibration</string>
+    <string name="saved_file_name">Body Temp.txt</string>
+    <string name="label_paraSmallRes">Small Res:</string>
+    <string name="label_paraLargeRes">Large Res:</string>
+    <string name="label_paraTemp">Temp:</string>
+    <string name="hint_paraLargeRes">2499 Ω</string>
+    <string name="hint_paraSmallRes">1001 Ω</string>
+    <string name="hint_paraTemp">37 ℃</string>
+    <string name="hint_paraEmpty">Empty Para</string>
+    <string name="hint_paraAlreadyCali">Calibrated</string>
+    <string name="hint_paraResTooLarge">Cali value too large. Out of range 1001 to 2499</string>
+    <string name="hint_paraResTooSmall">Cali Value too small. Out of range 1001 to 2499</string>
+    <string name="hint_paraTempTooLarge">Cali value too large. Out of range 25 to 42</string>
+    <string name="hint_paraTempTooSmall">Cali value too small. Out of range 25 to 42</string>
+    <string name="hint_paraSmallResSuccess">Cali small res success.</string>
+    <string name="hint_paraLargeResSuccess">Cali large res success.</string>
+    <string name="hint_paraTempSuccess">Cali temp success.</string>
+    <string name="hint_paraLargeResNotAvailable">Cali large res failed, must cali small res first!</string>
+    <string name="hint_paraTempNotAvailable">Cali temp failed, must cali large res first!</string>
+    <string name="button_Recali">Recalibration</string>
+    <string name="button_Read">Read</string>
+    <string name="hint_paraSmallResTimeout">Cali small res timeout.</string>
+    <string name="hint_paraTempTimeout">Cali temp timeout.</string>
+    <string name="hint_paraLargeResTimeout">Cali large res timeout.</string>
+
+
+    <string name="temp_invalid">Resistance is not cali, the cali temp is invalid</string>
+    <string name="error_number">More than error number</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.eli.bledebug;
+package com.example.eli.bledebug.ui.base;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -9,8 +9,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 
+import com.umeng.message.PushAgent;
+
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+
+import static anetwork.channel.http.NetworkSdkSetting.context;
 
 /**
  * Author: eli
@@ -32,6 +36,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(initLayoutId());
 
+        PushAgent.getInstance(context).onAppStart();
         mContext = this;
         mUnbinder = ButterKnife.bind(this);
 
