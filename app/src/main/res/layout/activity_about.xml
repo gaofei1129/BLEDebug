@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/main_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/toolbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="关于" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_relative"
+        android:fadingEdge="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="60.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="10.0dip">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/MorePageTableLayout_Follow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="3dp"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:id="@+id/row_git"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:background="@drawable/selector_setting_top">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="17.0dip"
+                            android:text="开发者"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:gravity="center_vertical"
+                            android:paddingRight="17dp"
+                            android:src="@drawable/ic_arrow" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/row_csdn"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:background="@drawable/selector_setting_mid">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="17.0dip"
+                            android:text="博客"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:gravity="center_vertical"
+                            android:paddingRight="17dp"
+                            android:src="@drawable/ic_arrow" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/more_page_row3"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:background="@drawable/selector_setting_bottom">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="17.0dip"
+                            android:text="联系我们"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:paddingRight="17dp"
+                            android:text="1455645107@qq.com"
+                            android:textColor="@android:color/black" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="4.0dip"
+                android:text="客户端"
+                android:textColor="#ff888888"
+                android:textSize="16.0sp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/MorePageTableLayout_Client"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="3dp"
+                    android:paddingLeft="1.0dip"
+                    android:shrinkColumns="0"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:id="@+id/row_share"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:background="@drawable/selector_setting_top">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="17.0dip"
+                            android:text="分享"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:gravity="center_vertical"
+                            android:paddingRight="17dp"
+                            android:src="@drawable/ic_arrow" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/row_ping"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="2.0dip"
+                        android:layout_marginRight="2.0dip"
+                        android:background="@drawable/selector_setting_bottom">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:drawablePadding="10.0dip"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="17.0dip"
+                            android:text="赏5星好评"
+                            android:textColor="#ff333333"
+                            android:textSize="16.0sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:gravity="center_vertical"
+                            android:paddingRight="17dp"
+                            android:src="@drawable/ic_arrow" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_wx"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/erweima" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#9f9f9f"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:text="长按二维码保存到本地" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:minHeight="60dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="6px"
+        android:paddingLeft="40px"
+        android:paddingTop="6px"
+        android:text="No data"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+</LinearLayout>
